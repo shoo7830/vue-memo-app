@@ -32,7 +32,8 @@ export default {
                 return false;
             }
 
-            this.$emit('addMemo', {id, title, content})
+            this.$emit('addMemo', {id, title, content});
+            this.resetFields();
         }
     }
 }
