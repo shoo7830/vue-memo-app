@@ -34,6 +34,11 @@ export default {
 
             this.$emit('addMemo', {id, title, content});
             this.resetFields();
+        },
+        
+        resetFields() {
+            this.title ='';
+            this.content = '';
         }
     }
 }
